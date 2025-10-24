@@ -73,7 +73,7 @@ const  toolsYAML = `
     - Load BED files to view genomic regions or features
     - Load BigWig files to view coverage or signal tracks
     - Load multiple related files simultaneously
-    - Restore a previously saved IGV session
+    - Restore a previously saved IGV session from an XML file
     - Load files from remote URLs or cloud storage
 
   arguments:
@@ -129,7 +129,6 @@ const  toolsYAML = `
   description: |
     Collapse the track to a compact representation.  Annotation tracks will be collapsed to a single line.
     Not all track types support collapsing; for those that do not, this command will have no effect.
-
 
   arguments:
     - name: trackName
@@ -188,20 +187,6 @@ const  toolsYAML = `
       description: The name of the track to set the color for. The name is the file name by default.
         This is optional; if not provided, the color will be set for all tracks.
       optional: true
-
-- name: renameTrack
-  description: |
-    Renames a track.
-
-  arguments:
-    - name: currentName
-      description: |
-        The current name of the track.
-        NOTE: If the current name contains spaces, replace them with %20.
-    - name: newName
-      description: |
-        The new name for the track.
-        NOTE: If the new name contains spaces, replace them with %20.
 
 - name: group
   description: |

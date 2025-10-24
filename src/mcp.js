@@ -38,7 +38,7 @@ class IGVConnection {
             let resolved = false;
 
             // Set timeout before connecting
-            client.setTimeout(5000);
+            client.setTimeout(60000);
 
             client.connect(this.port, this.host, () => {
                 console.error(`[IGV] Connected to ${this.host}:${this.port}`);
