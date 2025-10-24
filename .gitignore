@@ -55,3 +55,6 @@ Thumbs.db
   }
 }
 
+/package-lock.json
+/igv-mcp.iml
+/node_modules/
