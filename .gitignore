@@ -22,39 +22,9 @@ Thumbs.db
 # Environment
 .env
 .env.local
-{
-  "name": "igv-mcp-server",
-  "version": "1.0.0",
-  "description": "IGV MCP Server - Control IGV (Integrative Genomics Viewer) via Model Context Protocol",
-  "type": "module",
-  "main": "dist/index.js",
-  "bin": {
-    "igv-mcp-server": "dist/index.js"
-  },
-  "scripts": {
-    "build": "tsc",
-    "watch": "tsc --watch",
-    "start": "node dist/index.js",
-    "dev": "tsc && node dist/index.js",
-    "prepare": "npm run build"
-  },
-  "keywords": [
-    "mcp",
-    "igv",
-    "genomics",
-    "bioinformatics"
-  ],
-  "author": "",
-  "license": "MIT",
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.0"
-  },
-  "devDependencies": {
-    "@types/node": "^20.0.0",
-    "typescript": "^5.0.0"
-  }
-}
+
 
 /package-lock.json
 /igv-mcp.iml
 /node_modules/
+/igv.mcpb

@@ -10,7 +10,7 @@ import { Server } from "@modelcontextprotocol/sdk/server/index.js";
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { CallToolRequestSchema, ListToolsRequestSchema, } from "@modelcontextprotocol/sdk/types.js";
 import * as net from "net";
-import { parse } from "../node_modules/yaml/browser/index.js";
+import { parse } from "../node_modules/yaml/browser/index.js";  // Important - use browser (esm) version, otherwise rollup fails
 import toolsYAML from "./tools.yaml.js";
 
 /**

@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node src/mcp.js",
-    "build": "npx rollup -c"
+    "build": "npx rollup -c; node build-mcpb.js"
   },
   "keywords": [
     "mcp",
