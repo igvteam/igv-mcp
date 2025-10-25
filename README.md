@@ -44,7 +44,8 @@ Add to your MCP client settings (e.g., Claude Desktop):
   }
 }
 ```
-Replace `<path to>` with the actual path to the `mcp.js` file in your installation.   
+Replace `<path to>` with the actual path to the `mcp.js` file in your installation.  For development, you can use `src/mcp.js`
+but node_modules must be installed.   For production use `dist/mcp.js` which contains all dependencies bundled.
 
 ### Running the Server
 
