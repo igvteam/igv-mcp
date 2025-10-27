@@ -22,7 +22,7 @@ To build a production version:
 ```bash
 npm run build
 ```
-This will build a bundled `mcp.js` file, as well as a Claude 'mcpb' package, in the `dist` folder.
+This will build a bundled `mcp.js` file in the `dist` folder, as well as a Claude 'mcpb' package in the root folder.
 
 ## Usage
 
@@ -45,7 +45,7 @@ Add to your MCP client settings (e.g., Claude Desktop):
 }
 ```
 Replace `<path to>` with the actual path to the `mcp.js` file in your installation.  For development, you can use `src/mcp.js`
-but node_modules must be installed.   For production use `dist/mcp.js` which contains all dependencies bundled.
+but dependencies must be installed.   For production use `dist/mcp.js` which contains all dependencies bundled.
 
 ### Running the Server
 
