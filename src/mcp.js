@@ -271,8 +271,17 @@ async function main() {
             }
 
             const result = await handleToolCall(name, args || {}, toolSpec)
-            return {
-                content: [{type: "text", text: result,},],
+            if ("OK" === result) {
+                return {
+                    content: [{type: "text", text: result,},],
+                }
+            } else {
+                return {
+                    content: [
+                        {type: "text", text: `Result: ${result}`,}
+                    ],
+                    isError: true
+                }
             }
         } catch (error) {
             const errorMessage =
@@ -281,7 +290,7 @@ async function main() {
                 content: [
                     {type: "text", text: `Error executing tool '${name}': ${errorMessage}`,},
                 ],
-                isError: true,
+                isError: true
             }
         }
     })

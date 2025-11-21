@@ -56,7 +56,7 @@ const  toolsYAML = `
     - name: idOrPath
       description: |
         The identifier (ID) of the genome to load, or a path.  In most cases the id is the UCSC name (e.g., hg19, hg38, mm10).
-        Custom genomes can also be loaded by ID they have been added to the IGV genome list.  Alterrnatively, a genome 
+        Custom genomes can also be loaded by ID they have been added to the IGV genome list.  Alternatively, a genome 
         can be specified as local file path or URL to a genome json file, and indexed fasta file, or a two-bit file.
 
 
