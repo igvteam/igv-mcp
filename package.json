@@ -1,6 +1,6 @@
 {
   "name": "igv-mcp",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Control IGV (Integrative Genomics Viewer) via Model Context Protocol",
   "type": "module",
   "main": "dist/igv-mcp.js",
@@ -8,7 +8,7 @@
     "igv-mcp": "dist/igv-mcp.js"
   },
   "scripts": {
-    "start": "node src/mcp.js",
+    "start": "node src/main.js",
     "build": "npx rollup -c; node build-mcpb.js"
   },
   "keywords": [

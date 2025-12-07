@@ -80,7 +80,7 @@ const  toolsYAML = `
     - name: path
       description: |
         Full path or URL to the file to load. Supported formats include:
-          - Alignment: BAM, SAM, CRAM
+          - Alignment: BAM, CRAM
           - Variant: VCF
           - Annotation: BED, GFF, GTF, BigBed, BigGenePred
           - Coverage: BigWig, TDF, WIG

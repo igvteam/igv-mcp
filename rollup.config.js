@@ -3,9 +3,9 @@ import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
 
 export default {
-    input: 'src/mcp.js',
+    input: 'src/main.js',
     output: {
-        file: 'dist/mcp.js',
+        file: 'dist/igv-mcp.js',
         format: 'esm'
     },
     plugins: [

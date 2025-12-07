@@ -4,17 +4,19 @@
   "version": "0.0.1",
   "description": "Control IGV (Integrative Genomics Viewer) via Model Context Protocol",
   "author": {
-    "name": "Thorin Tabor"
+    "name": "Thorin Tabor, Jim Robinson"
   },
   "server": {
     "type": "node",
-    "entry_point": "dist/mcp.js",
+    "entry_point": "dist/igv-mcp.js",
     "mcp_config": {
       "command": "node",
       "args": [
-        "${__dirname}/dist/mcp.js",
+        "${__dirname}/dist/igv-mcp.js",
         "--host",
-        "127.0.0.1:60151"
+        "localhost",
+        "--port",
+        "60151"
       ]
     }
   }
